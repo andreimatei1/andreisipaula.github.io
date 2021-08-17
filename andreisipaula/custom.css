@@ -23,6 +23,13 @@
 
 * {box-sizing:border-box}
 
+#resto img {
+  border-radius: 16px;
+}
+
+.spacer-one-top-lg.o-hidden > .bg-image {
+  top: -1px;
+}
 
 /* Fading animation */
 .fade {
@@ -40,4 +47,10 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media(max-width: 991px) {
+  .header {
+      display: none !important;
+  }
 }

@@ -256,6 +256,10 @@ svg.icon-svg {
     height: 2.5rem
 }
 
+.card {
+    border-radius: 16px;
+}
+
 .card-gutters {
     margin-right: -8px;
     margin-left: -8px
@@ -637,7 +641,7 @@ div[class*=col-].spacer-one-top-lg,
 div[class*=col-].spacer-double-lg,
 .spacer-double-lg {
     padding-top: 6rem;
-    padding-bottom: 6rem
+    padding-bottom: 3rem
 }
 
 div[class*=col-].spacer-one-bottom-md,
@@ -743,8 +747,6 @@ ul.instafeed-list li {
     color: #333342;
     font-size: 1rem
 }
-
-@media(max-width:991px) {}
 
 @media(min-width:992px) {
     .display-4 {
@@ -873,7 +875,7 @@ ul.instafeed-list li {
 .events-img-wrapper {
     display: inline-block;
     position: relative;
-    width: 300px;
+    width: 280px;
     height: 300px;
     overflow: hidden;
     border-radius: 0%;
