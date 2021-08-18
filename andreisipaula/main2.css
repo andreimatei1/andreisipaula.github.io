@@ -849,19 +849,35 @@ ul.instafeed-list li {
         margin-bottom: 3rem;
     }
 
-    .introduction .data {
+    #resto .data {
         font-size: 0.7rem;
-        color: #993333 !important;
-        font-weight: 800;
+        /*color: #993333 !important;
+        font-weight: 800; */
     }
 
     .introduction .min-vh-80 {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
+
+    .title-text-replacement {
+        display: block;
+    }
+
+    .title-text {
+        visibility: hidden;
+    }
 }
 
-@media(min-width:768px) {}
+@media(min-width:768px) {
+    .title-text-replacement {
+        display: none;
+    }
+
+    .title-text {
+        visibility:visible;
+    }
+}
 
 @media(max-width:575px) {
     .display-2 {
