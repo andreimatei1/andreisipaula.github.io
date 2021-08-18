@@ -8,9 +8,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inconsolata:wght@200;300&family=Space+Mono&family=WindSong&family=Zeyada&display=swap" rel="stylesheet">
-        <link href="./andreisipaula/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-        <link href="./andreisipaula/main2.css" rel="stylesheet" type="text/css" media="all">
-        <link href="./andreisipaula/custom.css" rel="stylesheet" type="text/css" media="all">
+        <link href="./assets/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+        <link href="./assets/main2.css" rel="stylesheet" type="text/css" media="all">
+        <link href="./assets/custom.css" rel="stylesheet" type="text/css" media="all">
 
         <meta name="robots" content="noindex">
 
@@ -38,7 +38,19 @@
             </div>
         </header>
         <section class="gradient-overlay-dark introduction">
-            <img class="bg-image" src="./andreisipaula/background copy.png" alt="">
+            <!-- <img class="bg-image" src="./assets/background_mobile.png" alt=""> -->
+            <div class="bg-image">
+                <div class="curved-decoration ">
+                    <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 168.6227" enable-background="new 0 0 2560 168.6227" xml:space="preserve">
+                    <g>
+                    </g>
+                                        <g>
+                                            <path d="M2560,0c0,0-219.6543,165.951-730.788,124.0771c-383.3156-31.4028-827.2138-96.9514-1244.7139-96.9514
+                          c-212.5106,0-439,3.5-584.4982,1.5844l0,139.9126h2560V0z"></path>
+                                        </g>
+                    </svg>
+                </div>
+            </div>
             <div class="container title-text">
                 <div class="row min-vh-80 align-items-center z-index-2 position-relative ">
                     <div class="col-12">
@@ -46,16 +58,6 @@
                         <p class="font-weight-300 text-light lead mb-5 data">5 Septembrie 2021 - Cluj-Napoca </p>
                     </div>
                 </div>
-            </div>
-            <div class="curved-decoration ">
-                <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 168.6227" enable-background="new 0 0 2560 168.6227" xml:space="preserve">
-                <g>
-                </g>
-                                    <g>
-                                        <path d="M2560,0c0,0-219.6543,165.951-730.788,124.0771c-383.3156-31.4028-827.2138-96.9514-1244.7139-96.9514
-                      c-212.5106,0-439,3.5-584.4982,1.5844l0,139.9126h2560V0z"></path>
-                                    </g>
-                </svg>
             </div>
            
         </section>
@@ -71,7 +73,7 @@
                 <div class="row justify-content-lg-between align-items-center">
 
                     <div class="col-md-6">
-                        <img src="./andreisipaula/img1.png" style="width:100%" loading="lazy">
+                        <img src="./assets/img1.png" style="width:100%" loading="lazy">
                         </div>
                         <div class="col-md-6 mb-5 mb-md-0">
                             <div class="pr-md-4 text-center pt-3">
@@ -158,7 +160,7 @@
                                     Cluj-Napoca
                                 </p>
                                 <div class="mb-5 mb-md-5 events-img-wrapper">
-                                    <img src="./andreisipaula/harta_ceremonie.png" loading="lazy">
+                                    <img src="./assets/harta_ceremonie.png" loading="lazy">
                                 </div>
                             </div>
                         </div>
@@ -174,7 +176,7 @@
                                 Cluj-Napoca                                <br>
                             </p>
                             <div class="mb-5 mb-md-5 events-img-wrapper">
-                                <img src="./andreisipaula/harta_petrecere.png" loading="lazy">
+                                <img src="./assets/harta_petrecere.png" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -184,7 +186,7 @@
 
         
         <section class="spacer-one-top-lg o-hidden">
-            <img class="bg-image" src="./andreisipaula/background2.jpeg" alt="" loading="lazy">
+            <img class="bg-image" src="./assets/background2.jpeg" alt="" loading="lazy">
             <div class="container">
                 <div class="row  min-vh-80 align-items-center z-index-2 position-relative text-center">
                 </div>
@@ -235,8 +237,8 @@
             </svg>
         </a>
     </div>
-    <script src="./andreisipaula/jquery-1.12.4.min.js.download"></script>
-    <script src="./andreisipaula/smooth-scroll.js.download"></script>
+    <script src="./assets/jquery-1.12.4.min.js.download"></script>
+    <script src="./assets/smooth-scroll.js.download"></script>
     <script>
         !function (a) {
             "use strict";
@@ -251,14 +253,7 @@
                 }) : a(this).scrollTop() <= e.top + 50 && s.hasClass("switched-header") && s.fadeOut("fast", function () {
                     a(this).removeClass("switched-header").addClass("default").fadeIn(100), a(".scroll-to-top").removeClass("active")
                 })
-            }), a("a.scroll").smoothScroll({speed: 800, offset: -180}), a(".popup-image").magnificPopup({
-                type: "image",
-                fixedContentPos: !1,
-                fixedBgPos: !1,
-                mainClass: "mfp-no-margins mfp-with-zoom",
-                image: {verticalFit: !0},
-                zoom: {enabled: !0, duration: 300}
-            });
+            }), a("a.scroll").smoothScroll({speed: 800, offset: -180});
 
         }(jQuery);
     </script>
