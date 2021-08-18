@@ -100,7 +100,7 @@ body {
 }
 
 .bg-image {
-    background: url('../assets/background_copy.png');
+    background: url('../assets/background_copy.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -871,7 +871,7 @@ ul.instafeed-list li {
     }
 
     .bg-image {
-        background-image: url('../assets/background_mobile.png');
+        background-image: url('../assets/background_mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
